@@ -12,12 +12,13 @@ const prompt = require('prompt-sync')();
 
 // challenge 2
 
-// const convertTemp = (temp) => {
-//     const Fahrenheit = (temp * 1.8) + 32;
-//     return Fahrenheit
-// }
+const convertTemp = (temp) => {
+    temp = prompt('enter: ')
+    const Fahrenheit = (temp * 1.8) + 32;
+    return Fahrenheit
+}
 
-// console.log(convertTemp(23));
+// console.log(convertTemp());
 
 // challenge 3
 // var a = "value";
@@ -30,7 +31,9 @@ const prompt = require('prompt-sync')();
 // challenge 4
 
 const operations = (a, b) => {
-    
+        a = prompt('enter: ')
+        b = prompt('enter: ')
+
     console.log(`${a + b} \n${a - b} \n${a * b} \n${a / b} `);
     
 }
@@ -38,6 +41,11 @@ const operations = (a, b) => {
 // operations(3, 2)
 
 const calc = (a, b, c, d) => {
+        a = prompt('enter: ')
+        b = prompt('enter: ')
+        c = prompt('enter: ')
+        d = prompt('enter: ')
+
     const sum  = a + b + c + d
     const moy = sum / 4;
 
@@ -50,6 +58,9 @@ const calc = (a, b, c, d) => {
 // challenge 6
 
 const distance = (fast, time) => {
+        fast = prompt('enter: ')
+        time = prompt('enter: ')
+
     console.log(fast * time);
      
 }
@@ -59,6 +70,8 @@ const distance = (fast, time) => {
 // challenge 7
 
 const circ = (r) => {
+        r = prompt('enter: ')
+
     console.log(2 * Math.PI * r);
     
 }
@@ -67,24 +80,32 @@ const circ = (r) => {
 
 // challenge 8
 const reverse = (x) => {
+        x = prompt('enter: ')
+
     const numbers = [x];
+    // console.log(numbers);
+    
     console.log(Number(numbers.join('').split('').reverse().join('')))
 
 }
 
-reverse(123)
+reverse()
 
 // challlenge 9
 const convertDist = (dist) => {
+        dist = prompt('enter: ')
+
  console.log(dist / 1.609);
  
 }
 
-// convertDist(300)
+// convertDist()
 
 const convertMoneyToMAD = (money) => {
+        money = prompt('enter: ')
+
     console.log(money * 10.61);
     
 }
 
-// convertMoneyToMAD(23)
+// convertMoneyToMAD()
