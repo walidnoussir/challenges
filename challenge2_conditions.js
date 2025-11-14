@@ -193,4 +193,9 @@ const comparePassword = (password) => {
     
 }
 
-comparePassword()
+// comparePassword()
+
+let fruits = ["pomme", "banane", "orange"];
+
+fruits[0] = "apple"
+console.log(fruits.at(0)); // "orange"
