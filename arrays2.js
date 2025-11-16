@@ -136,12 +136,60 @@ const wordGame = (word) => {
 const inverse = (num) => {
   const nums = [];
   for (let i = 0; i < 3; i++) {
-    num = Number(prompt(`enter a number ${i + 1}`));
+    num = Number(prompt(`enter a number ${i + 1} = `));
     nums.push(num);
   }
 
-  const reversedArr = nums.reverse();
-  console.log(nums.concat(reversedArr));
+  const numsCopy = [...nums];
+
+  console.log(nums.concat(numsCopy.reverse()));
 };
 
-inverse();
+// inverse();
+// challenge 8
+const addRemove = (input, person) => {
+  const persons = [];
+  input = prompt(
+    "Choose commande (add / remove) to finish type fin : "
+  ).toLowerCase();
+
+  while (input !== "fin") {
+    if (input === "add") {
+      person = prompt("enter a person = ");
+      persons.push(person);
+      console.log(`${person} added successfully`);
+    } else if (input === "remove") {
+      persons.length > 0 ? persons.shift() : console.log("array is empty");
+    } else {
+      console.log("commande not found");
+    }
+
+    input = prompt("type add / remove / fin = ").toLowerCase();
+  }
+
+  console.log(persons);
+};
+
+// addRemove();
+
+// challenge 9
+const verifyNotes = (note) => {
+  const notes = [];
+  let result = "";
+  for (let i = 1; i <= 5; i++) {
+    note = Number(prompt(`enter note ${i} = `));
+    notes.push(note);
+  }
+
+  for (let i = 0; i < notes.length - 1; i++) {
+    notes[i] > notes[i + 1]
+      ? (result = "Régression")
+      : notes[i] < notes[i + 1]
+      ? (result = "Progression")
+      : (result = "Tendance irrégulière");
+  }
+
+  console.log(result);
+};
+
+verifyNotes();
