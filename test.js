@@ -1,4 +1,3 @@
-
 // arr[0] = "ali"
 // arr.pop()
 
@@ -16,12 +15,8 @@
 // let sum = 1
 // const newArr = numbers.map((num) => sum = sum * num)
 
-
-
-
 // console.log(`la somme : ${sum}`);
 // console.log(`la moyenne = ${sum / numbers.length}`);
-
 
 // const newArr = arr.slice(0)
 //  arr.splice(1, 2, "salima", "kawtar")
@@ -35,4 +30,8 @@ const arr1 = ["walid", "oussama", "adnane", "ayoub"];
 // console.log(numbers.sort((a, b) => b - a));
 console.log(numbers.reverse());
 
+// let name = "walid";
 
+// if (name === "walid") console.log("hello wlaid");
+
+// name == "walid" ? console.log("hello walid") : console.log("hello flan");

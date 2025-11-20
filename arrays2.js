@@ -133,6 +133,8 @@ const wordGame = (word) => {
 };
 
 // wordGame();
+
+// challenge 8
 const inverse = (num) => {
   const nums = [];
   for (let i = 0; i < 3; i++) {
@@ -146,7 +148,7 @@ const inverse = (num) => {
 };
 
 // inverse();
-// challenge 8
+// challenge 9
 const addRemove = (input, person) => {
   const persons = [];
   input = prompt(
@@ -172,7 +174,7 @@ const addRemove = (input, person) => {
 
 // addRemove();
 
-// challenge 9
+// challenge 10
 const verifyNotes = (note) => {
   const notes = [];
   let result = "";
